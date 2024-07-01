@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#75CFFE] h-screen w-screen overflow-hidden">
+    <section
+        data-aos="fade-up"
+        data-aos-duration="1000" 
+        class="sm:p-2 relative overflow-hidden z-50 h-screen w-screen flex items-center justify-center"
+    >
+      <div
+        class="md:w-[842px] md:h-[408px] rounded-xl bg-white shadow-2xl md:flex gap-4"
+      >
+        <img
+          class="col-span-2 h-0 md:h-[408px] object-cover"
+          src="./assets/login_image.png"
+          alt=""
+        />
+        <div class="flex w-full flex-col justify-center items-center gap-1 p-8">
+          <img class="h-20" src="./assets/logo.png" alt="" />
+          <a class="pb-4 font-medium text-xl md:text-2xl" href="/">CodeDotSolution</a>
+          <h1 class="py-2">Enter your Domain</h1>
+          <form action="" class="grid gap-4">
+            <input class="rounded-full text-sm sm:w-60  px-4 py-2 shadow bg-slate-100" type="text" placeholder="Enter your domain">
+            <input class="rounded-full cursor-pointer px-6 py-1 shadow bg-[#4D93F4] text-[#094394] font-medium mx-auto" type="submit" value="Continue">
+        </div>
+      </div>
+
+
+      <!-- shapes -->
+       <img 
+       data-aos="fade-up-right"
+       data-aos-delay="1000"
+       data-aos-duration="1000"
+       class="absolute -z-40 bottom-0 left-0 " src="./assets/ellipse1.png" alt="">
+       <img 
+       data-aos="fade-down-left"
+       data-aos-delay="1000"
+       data-aos-duration="1400"
+       class="absolute -z-40 top-0 right-0 " src="./assets/ellipse2.png" alt="">
+       <img 
+       data-aos="fade-down-right"
+       data-aos-delay="1000"
+       data-aos-duration="1000"
+        class="absolute -z-40 top-0 left-0 " src="./assets/ellipse3.png" alt="">
+    </section>
+  </body>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
