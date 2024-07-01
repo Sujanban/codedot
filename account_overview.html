@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--    tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- chartjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- date-picker cdn -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+  </head>
+  <body>
+    <section class="p-4 w-[1128px] mx-auto bg-slate-100 rounded-xl">
+      <!-- header -->
+      <div class="flex items-center gap-8">
+        <div class="px-8">
+          <h1 class="text-lg font-bold">HI, Bipin</h1>
+          <p class="text-xs">Admin</p>
+        </div>
+        <form class="bg-white flex items-center rounded-xl flex-grow" action="">
+          <i class="px-4 text-black/50 fa fa-search" aria-hidden="true"></i>
+          <input
+            class="w-full rounded-xl text-xs p-4 outline-none"
+            type="search"
+            placeholder="Search Something..."
+          />
+        </form>
+        <div class="flex items-center gap-1">
+          <img src="./assets/note.svg" alt="" />
+          <p class="text-xs text-black/50 current-date"></p>
+        </div>
+        <div class="relative">
+          <img class="w-6" src="./assets/notification.svg" alt="" />
+          <span
+            class="absolute w-3.5 h-3.5 flex items-center justify-center rounded-full -top-2 -right-2 text-[#094394] bg-blue-200 text-[10px]"
+            >16</span
+          >
+        </div>
+        <div>
+          <img class="drop-shadow-md" src="./assets/profile.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- dashboard grid -->
+      <div class="my-4 p-4 rounded-xl bg-white w-full h-[100%]">
+        <div class="py-2">
+          <span
+            class="px-4 py-2 italic text-base font-semibold text-white rounded-md bg-[#559FE4]"
+            >Account Overview</span
+          >
+        </div>
+
+        <!-- filter section -->
+        <div class="p-4 flex justify-between items-center gap-s4">
+          <div class="pr-20">
+            <h1 class="p-2 font-semibold text-black/50">Branch</h1>
+            <select
+              class="p-2 text-black/50 rounded-md outline-none w-60 text-sm dark-shadow"
+              name=""
+              id=""
+            >
+              <option value="">All</option>
+              <option value="">Kathmandu</option>
+              <option value="">Pokhara</option>
+            </select>
+          </div>
+
+          <div>
+            <h1 class="p-2 font-semibold text-black/50">Current Period</h1>
+            <div class="">
+              <input
+              name="daterange"
+                class="p-2 text-black/50 rounded-md outline-none text-sm w-60 dark-shadow"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <h1 class="line rounded-full"></h1>
+
+          <div>
+            <h1 class="p-2 font-semibold text-black/50">Previous Period</h1>
+            <div>
+              <input
+              name="daterange"
+                class="p-2 text-black/50 rounded-md outline-none text-sm w-60 dark-shadow"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <div class="w-full px-4">
+            <h1 class="p-2 opacity-0">.</h1>
+            <button
+              class="top-[20px] h-full btn bg-blue-200 font-medium rounded-md px-2 py-2 text-sm text-[#094394]"
+            >
+              Generate Data
+            </button>
+          </div>
+        </div>
+
+        <!-- dashboard chart -->
+        <!-- dashboard chart upper -->
+        <div class="p-4 grid grid-cols-2 gap-4">
+          <!-- individual chart item -->
+          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4 ">
+              <div>
+                <h1 class="font-medium">Sub Agent Invoice</h1>
+                <p class="text-[#30A753] text-[10px]">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md ">
+              <canvas id="chart1" class="lineChart"></canvas>
+            </div>
+          </div>
+
+          <!-- individual chart item -->
+          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Sub Agent Invoice</h1>
+                <p class="text-[#30A753] text-[10px]">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas id="chart2" class="lineChart"></canvas>
+            </div>
+          </div>
+
+          <!-- individual chart item -->
+          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Sub Agent Invoice</h1>
+                <p class="text-[#30A753] text-[10px]">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas id="chart3" class="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- dashboard chart lower -->
+        <div class="p-4 grid grid-cols-2 gap-4">
+          <!-- individual chart item -->
+          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Paid Invoice</h1>
+                <p class="text-[#F2383A] text-[10px] font-medium">
+                  <i class="fa fa-arrow-down" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas id="chart11" class="lineChart"></canvas>
+            </div>
+          </div>
+
+          <!-- individual chart item -->
+          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Paid Invoice</h1>
+                <p class="text-[#F2383A] text-[10px] font-medium">
+                  <i class="fa fa-arrow-down" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas id="chart12" class="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
