@@ -4,6 +4,17 @@ burger.addEventListener('click', ()=>{
   mobileNav.classList.toggle('hidden');
 });
 
+// dashboard page
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerIcon = document.querySelector('.burger');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  burgerIcon.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+  });
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
