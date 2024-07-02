@@ -39,14 +39,19 @@
     />
   </head>
   <body>
-    <section class="p-4 w-[1128px] mx-auto bg-slate-100 rounded-xl">
+    <section class="p-4 xl:w-[1128px] mx-auto bg-slate-100 rounded-xl">
       <!-- header -->
-      <div class="flex items-center gap-8">
+      <div
+        class="relative flex justify-between md:justify-initial items-center gap-8"
+      >
         <div class="px-8">
           <h1 class="text-lg font-bold">HI, Bipin</h1>
           <p class="text-xs">Admin</p>
         </div>
-        <form class="bg-white flex items-center rounded-xl flex-grow" action="">
+        <form
+          class="hidden md:flex bg-white flex items-center rounded-xl flex-grow"
+          action=""
+        >
           <i class="px-4 text-black/50 fa fa-search" aria-hidden="true"></i>
           <input
             class="w-full rounded-xl text-xs p-4 outline-none"
@@ -54,19 +59,42 @@
             placeholder="Search Something..."
           />
         </form>
-        <div class="flex items-center gap-1">
+        <div class="hidden md:flex items-center gap-1">
           <img src="./assets/note.svg" alt="" />
           <p class="text-xs text-black/50 current-date"></p>
         </div>
-        <div class="relative">
+        <div class="hidden md:block relative">
           <img class="w-6" src="./assets/notification.svg" alt="" />
           <span
             class="absolute w-3.5 h-3.5 flex items-center justify-center rounded-full -top-2 -right-2 text-[#094394] bg-blue-200 text-[10px]"
             >16</span
           >
         </div>
-        <div>
+        <div class="hidden md:block">
           <img class="drop-shadow-md" src="./assets/profile.svg" alt="" />
+        </div>
+
+        <!-- mobile navigation components -->
+        <div class="md:hidden">
+          <i class="burger md:hidden fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div
+          class="py-6 px-2 hidden absolute top-[100%] right-0 mobile-nav md:hidden"
+        >
+          <ul class="p-4 px-12 grid gap-4 bg-white shadow-xl rounded text-xs">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Account</a>
+            </li>
+            <li>
+              <a href="">Profile</a>
+            </li>
+            <li>
+              <a href="">Logout</a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -80,11 +108,15 @@
         </div>
 
         <!-- filter section -->
-        <div class="p-4 flex justify-between items-center gap-s4">
-          <div class="pr-20">
-            <h1 class="p-2 font-semibold text-black/50">Branch</h1>
+        <div
+          class="sm:p-2 md:p-4 grid grid-cols-2 lg:flex justify-between items-center gap-2 md:gap-4"
+        >
+          <div class="xl:pr-20">
+            <h1 class="px-1 py-2 sm:p-2 text-sm md:text-base font-semibold text-black/50">
+              Branch
+            </h1>
             <select
-              class="p-2 text-black/50 rounded-md outline-none w-60 text-sm dark-shadow"
+              class="px-1 py-2 sm:p-2  text-black/50 rounded-md outline-none w-full sm:w-60 text-sm dark-shadow"
               name=""
               id=""
             >
@@ -95,31 +127,35 @@
           </div>
 
           <div>
-            <h1 class="p-2 font-semibold text-black/50">Current Period</h1>
+            <h1 class="px-1 py-2 sm:p-2  text-sm md:text-base font-semibold text-black/50">
+              Current Period
+            </h1>
             <div class="">
               <input
-              name="daterange"
-                class="p-2 text-black/50 rounded-md outline-none text-sm w-60 dark-shadow"
+                name="daterange"
+                class="px-1 py-2 sm:p-2  text-black/50 rounded-md outline-none text-sm w-full sm:w-60 dark-shadow"
                 type="text"
               />
             </div>
           </div>
 
-          <h1 class="line rounded-full"></h1>
+          <h1 class="hidden lg:block line rounded-full"></h1>
 
           <div>
-            <h1 class="p-2 font-semibold text-black/50">Previous Period</h1>
+            <h1 class="px-1 py-2 sm:p-2  font-semibold text-sm md:text-base text-black/50">
+              Previous Period
+            </h1>
             <div>
               <input
-              name="daterange"
-                class="p-2 text-black/50 rounded-md outline-none text-sm w-60 dark-shadow"
+                name="daterange"
+                class="px-1 py-2 sm:p-2  text-black/50 rounded-md outline-none text-sm w-full sm:w-60 dark-shadow"
                 type="text"
               />
             </div>
           </div>
 
-          <div class="w-full px-4">
-            <h1 class="p-2 opacity-0">.</h1>
+          <div class="w-full">
+            <h1 class="px-0 py-1 sm:p-2 opacity-0">.</h1>
             <button
               class="top-[20px] h-full btn bg-blue-200 font-medium rounded-md px-2 py-2 text-sm text-[#094394]"
             >
@@ -130,53 +166,9 @@
 
         <!-- dashboard chart -->
         <!-- dashboard chart upper -->
-        <div class="p-4 grid grid-cols-2 gap-4">
+        <div class="p-2 md:p-4 grid md:grid-cols-2 gap-4">
           <!-- individual chart item -->
-          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
-            <div class="space-y-4 ">
-              <div>
-                <h1 class="font-medium">Sub Agent Invoice</h1>
-                <p class="text-[#30A753] text-[10px]">
-                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
-                </p>
-              </div>
-              <div>
-                <p class="text-xs text-black/50">Total</p>
-                <h1>$ 600.00</h1>
-              </div>
-
-              <div class="grid grid-cols-2">
-                <div class="flex items-start">
-                  <img
-                    class="pt-2 pr-1 w-4"
-                    src="./assets/arrow-up.svg"
-                    alt=""
-                  />
-                  <div class="">
-                    <span class="text-xs">$ 100.00</span>
-                    <p class="text-[10px] text-black/50">Paid</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <img
-                    class="pt-2 pr-1 w-4"
-                    src="./assets/arrow-down.svg"
-                    alt=""
-                  />
-                  <div>
-                    <span class="text-xs">$ -94.50</span>
-                    <p class="text-[10px] text-black/50">pending</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-2 shadow rounded-md ">
-              <canvas id="chart1" class="lineChart"></canvas>
-            </div>
-          </div>
-
-          <!-- individual chart item -->
-          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+          <div class="p-3 md:grid grid-cols-3 shadow-lg rounded-xl">
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Sub Agent Invoice</h1>
@@ -215,12 +207,12 @@
               </div>
             </div>
             <div class="col-span-2 shadow rounded-md">
-              <canvas id="chart2" class="lineChart"></canvas>
+              <canvas id="chart1" class="w-[200px] md:w-full lineChart"></canvas>
             </div>
           </div>
 
           <!-- individual chart item -->
-          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+          <div class="p-3 md:grid grid-cols-3 shadow-lg rounded-xl">
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Sub Agent Invoice</h1>
@@ -259,15 +251,63 @@
               </div>
             </div>
             <div class="col-span-2 shadow rounded-md">
-              <canvas id="chart3" class="lineChart"></canvas>
+              <canvas
+                id="chart2" class="w-[200px] md:w-full lineChart"
+              ></canvas>
+            </div>
+          </div>
+
+          <!-- individual chart item -->
+          <div class="p-3 md:grid grid-cols-3 shadow-lg rounded-xl">
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Sub Agent Invoice</h1>
+                <p class="text-[#30A753] text-[10px]">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas
+                id="chart3" class="w-[200px] md:w-full lineChart"
+              ></canvas>
             </div>
           </div>
         </div>
 
         <!-- dashboard chart lower -->
-        <div class="p-4 grid grid-cols-2 gap-4">
+        <div class="p-2 md:p-4 grid md:grid-cols-2 gap-4">
           <!-- individual chart item -->
-          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+          <div class="p-3 md:grid grid-cols-3 shadow-lg rounded-xl">
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Paid Invoice</h1>
@@ -306,12 +346,15 @@
               </div>
             </div>
             <div class="col-span-2 shadow rounded-md">
-              <canvas id="chart11" class="lineChart"></canvas>
+              <canvas
+                id="chart11"
+                class="w-[200px] md:w-full lineChart"
+              ></canvas>
             </div>
           </div>
 
           <!-- individual chart item -->
-          <div class="p-3 grid grid-cols-3 shadow-lg rounded-xl">
+          <div class="p-3 md:grid grid-cols-3 shadow-lg rounded-xl">
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Paid Invoice</h1>
@@ -350,7 +393,10 @@
               </div>
             </div>
             <div class="col-span-2 shadow rounded-md">
-              <canvas id="chart12" class="lineChart"></canvas>
+              <canvas
+                id="chart12"
+                class="w-[200px] md:w-full lineChart"
+              ></canvas>
             </div>
           </div>
         </div>
