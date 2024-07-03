@@ -642,14 +642,19 @@ flex-shrink: 0;
 .service-manager .service-manager-body-left button {
   padding: 2px 8px;
   border: none;
-  color: #094394;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   border-radius: 4px;
+}
+
+.service-manager .service-manager-body-left .active{
+  color: #094394;
   background: rgba(77, 147, 244, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
 }
 
 .service-manager-body-right {
@@ -747,12 +752,14 @@ flex-shrink: 0;
 .client-invoice-body-left button {
   padding: 2px 8px;
   border: none;
-  color: #094394;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   border-radius: 4px;
+}
+.client-invoice-body-left .active {
+  color: #094394;
   background: rgba(77, 147, 244, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -884,6 +891,21 @@ flex-shrink: 0;
   display: flex !important;
   flex-grow: 1;
   justify-content: center;
+}
+
+.service-manager-bottom .service-manager-body-left-item button {
+  padding: 2px 8px;
+  border: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+}
+.service-manager-bottom .service-manager-body-left-item .active {
+  color: #094394;
+  background: rgba(77, 147, 244, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .service-manager-bottom .service-manager-body-right {
