@@ -1672,6 +1672,16 @@ a{
     height: 40px;
   }
 
+  .service-manager-body-lefttttt{
+    padding: 12px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+  .service-manager-body-lefttttt button{
+    padding: 4px 0px;
+  }
+
   .service-manager-bottom {
     /* display: none; */
   }
@@ -1701,6 +1711,18 @@ a{
     display: block;
     gap: 12px;
     /* padding: 12px; */
+  }
+
+  .service-manager .service-manager-body-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .service-manager .service-manager-body-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
   /* model */

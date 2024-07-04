@@ -26,7 +26,6 @@ modelHide.addEventListener('click', ()=>{
 
 
 // dashboard page
-// script.js
 
 document.addEventListener('DOMContentLoaded', () => {
   const burgerIcon = document.querySelector('.burger');
