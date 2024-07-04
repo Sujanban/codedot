@@ -1,8 +1,13 @@
-const burger = document.querySelector('.burger');
-const mobileNav = document.querySelector('.mobile-nav');
-burger.addEventListener('click', ()=>{
-  mobileNav.classList.toggle('hidden');
-});
+// const burger = document.querySelector('.burger');
+// const mobileNav = document.querySelector('.mobile-nav');
+// burger.addEventListener('click', ()=>{
+//   if(mobileNav.hasAttribute('hidden')){
+//     mobileNav.removeAttribute('hidden');
+//   }
+//   else{
+//     mobileNav.setAttribute('hidden', '');
+//   }
+// });
 
 
 
