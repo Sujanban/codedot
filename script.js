@@ -4,6 +4,22 @@ burger.addEventListener('click', ()=>{
   mobileNav.classList.toggle('hidden');
 });
 
+
+
+// opening and closing closing model
+const modelBtn = document.querySelector('.module-add-button');
+const model = document.querySelector('.model');
+const modelHide = document.querySelector('.module-remove-button');
+
+modelBtn.addEventListener('click', ()=>{
+  model.classList.remove('hidden');
+});
+
+modelHide.addEventListener('click', ()=>{
+  model.classList.add('hidden');
+});
+
+
 // dashboard page
 // script.js
 
