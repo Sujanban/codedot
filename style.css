@@ -680,6 +680,20 @@ a{
 
 
 
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.new{
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
 
 
 
