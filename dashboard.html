@@ -123,7 +123,7 @@
             <div class="activity-log">
               <div class="activity-log-header">
                 <h1>Activity Logs</h1>
-                <button>View All</button>
+                <button class="view-all-btn">View All</button>
               </div>
               <div class="activity-log-body">
                 <div class="activity-log-item">
@@ -204,7 +204,7 @@
             <div class="service-manager activity-log">
               <div class="service-manager activity-log-header">
                 <h1>Service Manager</h1>
-                <button>View All</button>
+                <button class="view-all-btn">View All</button>
               </div>
               <div class="service-manager-body">
                 <div class="service-manager-body-lefttttt">
@@ -917,7 +917,7 @@
             <div class="service-manager activity-log">
               <div class="service-manager activity-log-header">
                 <h1>Client Invoice</h1>
-                <button>View All</button>
+                <button class="view-all-btn">View All</button>
               </div>
               <div class="service-manager-body">
                 <div class="client-invoice-body-left">
@@ -1563,7 +1563,7 @@
                     <option value="">My Work</option>
                     <option value="">My Work</option>
                   </select>
-                  <button>View All</button>
+                  <button class="view-all-btn">View All</button>
                 </div>
               </div>
 
@@ -1614,7 +1614,7 @@
                   <p class="time">30 Minutes</p>
                   <span class="done">Done</span>
                 </div>
-                <img class="new" src="./assets/new.svg" alt="">
+                <img class="new" src="./assets/new.svg" alt="" />
               </div>
               <div class="card relative">
                 <div>
@@ -1628,8 +1628,7 @@
                   <p class="time">30 Minutes</p>
                   <span class="pending">Pending</span>
                 </div>
-                <img class="new" src="./assets/new.svg" alt="">
-
+                <img class="new" src="./assets/new.svg" alt="" />
               </div>
               <div class="card relative">
                 <div>
@@ -1643,8 +1642,7 @@
                   <p class="time">30 Minutes</p>
                   <span class="cancelled">Cancelled</span>
                 </div>
-                <img class="new" src="./assets/new.svg" alt="">
-
+                <img class="new" src="./assets/new.svg" alt="" />
               </div>
               <div class="card relative">
                 <div>
@@ -1658,8 +1656,7 @@
                   <p class="time">30 Minutes</p>
                   <span class="done">Done</span>
                 </div>
-                <img class="new" src="./assets/new.svg" alt="">
-
+                <img class="new" src="./assets/new.svg" alt="" />
               </div>
 
               <div class="">
@@ -1754,7 +1751,7 @@
             <div class="check-in">
               <div class="check-in-header">
                 <h1>Check - In</h1>
-                <button>View All</button>
+                <button class="view-all-btn">View All</button>
               </div>
               <div class="check-in-body">
                 <div class="card card-1">
@@ -1953,7 +1950,7 @@
             <div class="check-in">
               <div class="check-in-header">
                 <h1>Visa Manager</h1>
-                <button>View All</button>
+                <button class="view-all-btn">View All</button>
               </div>
               <div class="check-in-body">
                 <div class="card card-1">
@@ -2153,7 +2150,7 @@
         <div class="targeted-dashboard">
           <div class="targeted-dashboard-header">
             <h1>Targeted Dashboard</h1>
-            <button>View All</button>
+            <button class="view-all-btn">View All</button>
           </div>
           <div class="targeted-dashboard-body">
             <div class="targeted-dashboard-item">
@@ -2168,8 +2165,18 @@
               </div>
               <div class="progress">
                 <div class="progress-tooltip">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="31" viewBox="0 0 45 31" fill="none">
-                    <path d="M0 5C0 2.23858 2.23858 0 5 0H40C42.7614 0 45 2.23858 45 5V20.6C45 23.3614 42.7614 25.6 40 25.6H30.7998C29.4429 25.6 28.1443 26.1515 27.202 27.1279L24.8309 29.5848C23.588 30.8726 21.5013 30.7927 20.3606 29.4137L18.7056 27.413C17.7558 26.2647 16.3432 25.6 14.8529 25.6H5C2.23858 25.6 0 23.3614 0 20.6V5Z" fill="#0C0C0C" fill-opacity="0.7"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="31"
+                    viewBox="0 0 45 31"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 5C0 2.23858 2.23858 0 5 0H40C42.7614 0 45 2.23858 45 5V20.6C45 23.3614 42.7614 25.6 40 25.6H30.7998C29.4429 25.6 28.1443 26.1515 27.202 27.1279L24.8309 29.5848C23.588 30.8726 21.5013 30.7927 20.3606 29.4137L18.7056 27.413C17.7558 26.2647 16.3432 25.6 14.8529 25.6H5C2.23858 25.6 0 23.3614 0 20.6V5Z"
+                      fill="#0C0C0C"
+                      fill-opacity="0.7"
+                    />
                   </svg>
                   <p>200</p>
                 </div>
@@ -2192,8 +2199,18 @@
               </div>
               <div class="progress">
                 <div class="progress-tooltip">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="31" viewBox="0 0 45 31" fill="none">
-                    <path d="M0 5C0 2.23858 2.23858 0 5 0H40C42.7614 0 45 2.23858 45 5V20.6C45 23.3614 42.7614 25.6 40 25.6H30.7998C29.4429 25.6 28.1443 26.1515 27.202 27.1279L24.8309 29.5848C23.588 30.8726 21.5013 30.7927 20.3606 29.4137L18.7056 27.413C17.7558 26.2647 16.3432 25.6 14.8529 25.6H5C2.23858 25.6 0 23.3614 0 20.6V5Z" fill="#0C0C0C" fill-opacity="0.7"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="45"
+                    height="31"
+                    viewBox="0 0 45 31"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 5C0 2.23858 2.23858 0 5 0H40C42.7614 0 45 2.23858 45 5V20.6C45 23.3614 42.7614 25.6 40 25.6H30.7998C29.4429 25.6 28.1443 26.1515 27.202 27.1279L24.8309 29.5848C23.588 30.8726 21.5013 30.7927 20.3606 29.4137L18.7056 27.413C17.7558 26.2647 16.3432 25.6 14.8529 25.6H5C2.23858 25.6 0 23.3614 0 20.6V5Z"
+                      fill="#0C0C0C"
+                      fill-opacity="0.7"
+                    />
                   </svg>
                   <p>200</p>
                 </div>
@@ -2212,7 +2229,7 @@
         <div class="service-manager-bottom service-manager targeted-dashboard">
           <div class="targeted-dashboard-header">
             <h1>Service Manager</h1>
-            <button>View All</button>
+            <button class="view-all-btn">View All</button>
           </div>
           <div class="service-manager-body">
             <div class="service-manager-body-left">
@@ -2221,7 +2238,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
-                      height="20"
+                  height="20"
                   viewBox="0 0 11 11"
                   fill="none"
                 >
@@ -2244,7 +2261,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
-                      height="20"
+                  height="20"
                   viewBox="0 0 11 11"
                   fill="none"
                 >
@@ -2267,7 +2284,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
-                      height="20"
+                  height="20"
                   viewBox="0 0 11 11"
                   fill="none"
                 >
@@ -2290,7 +2307,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
-                      height="20"
+                  height="20"
                   viewBox="0 0 11 11"
                   fill="none"
                 >
@@ -2454,7 +2471,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>01/01/2021</td>
+                    <td>02/07/2043</td>
                     <td>Diksha EduHub Global</td>
                     <td class="email">parbatghising58@gmail.com</td>
                     <td>
@@ -2464,29 +2481,11 @@
                   </tr>
                   <tr>
                     <td>01/01/2021</td>
-                    <td>Diksha EduHub Global</td>
-                    <td class="email">parbatghising58@gmail.com</td>
+                    <td>Sam Sulek</td>
+                    <td class="email">samsulek2@gmail.com</td>
                     <td>
-                      Request for Tuition Fee Receipt & Reminder for April
-                      Intake Payment
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01/01/2021</td>
-                    <td>Diksha EduHub Global</td>
-                    <td class="email">parbatghising58@gmail.com</td>
-                    <td>
-                      Request for Tuition Fee Receipt & Reminder for April
-                      Intake Payment
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01/01/2021</td>
-                    <td>Diksha EduHub Global</td>
-                    <td class="email">parbatghising58@gmail.com</td>
-                    <td>
-                      Request for Tuition Fee Receipt & Reminder for April
-                      Intake Payment
+                      Request for Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Et, enim.
                     </td>
                   </tr>
                 </tbody>
@@ -2523,50 +2522,50 @@
               <div class="model-header">
                 <h1>Add Widgets</h1>
                 <button class="module-remove-button">
-                  <img class="" src="./assets/go-back.svg" alt="">
+                  <img class="" src="./assets/go-back.svg" alt="" />
                 </button>
               </div>
               <div class="model-grid">
-                  <div class="card">
-                    <h1>Task Manager</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Notice Board</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Upcoming Expiry Visa</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Service Manager</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Client Invoice</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Visa Manager</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Target Dashboard</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Check-In</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Task Manager</h1>
-                    <button>Add</button>
-                  </div>
-                  <div class="card">
-                    <h1>Data Information</h1>
-                    <button>Add</button>
-                  </div>
+                <div class="card">
+                  <h1>Task Manager</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Notice Board</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Upcoming Expiry Visa</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Service Manager</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Client Invoice</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Visa Manager</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Target Dashboard</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Check-In</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Task Manager</h1>
+                  <button>Add</button>
+                </div>
+                <div class="card">
+                  <h1>Data Information</h1>
+                  <button>Add</button>
+                </div>
               </div>
             </div>
           </div>

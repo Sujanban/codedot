@@ -43,6 +43,18 @@ select {
   width: 200px !important;
 }
 
+.view-all-btn:hover{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: rgba(55, 137, 251, 0.60) !important;
+}
+
+.trash:hover{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
 /* Dashboard page css starts here */
 /* .navbar {
   width: 1200px;
