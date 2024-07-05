@@ -1991,9 +1991,44 @@ a {
 .australia-overview-main-grid-first-item-first-line-chart {
   width: 100%;
 }
+.australia-overview-main-grid-first-item-footer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.australia-overview-main-grid-first-item-footer-left{
+  padding: 0px 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.australia-overview-main-grid-first-item-footer-left > div{
+  color: var(--Neutral-800, #191D23);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.australia-overview-main-grid-first-item-footer-left span{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.australia-overview-main-grid-first-item-footer-left .circle.label-1{
+  background: #559FE4;
+}
+.australia-overview-main-grid-first-item-footer-left .circle.label-2{
+  background: #BFBFBF;
+}
+
 .australia-overview-main-grid-first-item-first-button {
   border: none;
-  float: right;
+  /* float: right; */
   border-radius: 4px;
   background: rgba(55, 137, 251, 0.3);
   padding: 5px 8px;

@@ -35,7 +35,7 @@ var data = [trace1, trace2, trace3];
 
 var layout = { barmode: "stack" };
 
-Plotly.newPlot("stackedbarchart1", data, layout);
+Plotly.newPlot("stackedbarchart1", data, layout, {displaylogo: false});
 
 
 
@@ -75,4 +75,4 @@ var trace11 = {
   
   var layout1 = { barmode: "stack" };
   
-  Plotly.newPlot("stackedbarchart2", data1, layout1);
+  Plotly.newPlot("stackedbarchart2", data1, layout1, {displaylogo: false});
