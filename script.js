@@ -1,28 +1,4 @@
-// const burger = document.querySelector('.burger');
-// const mobileNav = document.querySelector('.mobile-nav');
-// burger.addEventListener('click', ()=>{
-//   if(mobileNav.hasAttribute('hidden')){
-//     mobileNav.removeAttribute('hidden');
-//   }
-//   else{
-//     mobileNav.setAttribute('hidden', '');
-//   }
-// });
 
-
-
-// opening and closing closing model
-const modelBtn = document.querySelector('.module-add-button');
-const model = document.querySelector('.model');
-const modelHide = document.querySelector('.module-remove-button');
-
-modelBtn.addEventListener('click', ()=>{
-  model.classList.remove('hidden');
-});
-
-modelHide.addEventListener('click', ()=>{
-  model.classList.add('hidden');
-});
 
 
 // dashboard page
@@ -114,4 +90,28 @@ document.addEventListener("DOMContentLoaded", function () {
       options: chartOptions,
     });
   });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+const modelBtn = document.querySelector('.module-add-button');
+const model = document.querySelector('.model');
+const modelHide = document.querySelector('.module-remove-button');
+
+modelBtn.addEventListener('click', ()=>{
+  model.classList.remove('hidden');
+});
+
+modelHide.addEventListener('click', ()=>{
+  model.classList.add('hidden');
 });
