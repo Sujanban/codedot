@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- plottyjs -->
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- animation on scroll cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="study_in_australiya_overview">
+    <!-- NAVBAR -->
+    <div class="header-container">
+      <div class="user-info">
+        <h1>HI, Bipin</h1>
+        <p>Admin</p>
+      </div>
+      <form class="search-form" action="">
+        <i class="search-icon fa fa-search" aria-hidden="true"></i>
+        <input type="search" placeholder="Search Something..." />
+      </form>
+
+      <div class="alerts">
+        <img class="notification-icon" src="./assets/notification.svg" alt="" />
+        <span class="notification-count">16</span>
+      </div>
+      <div class="profile">
+        <img class="profile-image" src="./assets/profile.svg" alt="" />
+      </div>
+      <div class="mobile-menu">
+        <i class="burger fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="mobile-nav hidden">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Account</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- auystralia overview main section -->
+    <div class="australia-overview-main">
+      <h1 class="australia-overview-main-title">Study in Australia</h1>
+      <div class="australia-overview-main-grid">
+        <div class="australia-overview-main-grid-first">
+          <div
+            class="australia-overview-main-grid-first-item australia-overview-main-grid-first-item-first"
+          >
+            <p class="australia-overview-main-grid-first-item-p">
+              Application Target
+            </p>
+            <canvas
+              class=""
+              id="australia-overview-main-grid-first-item-first-line-chart"
+            >
+            </canvas>
+            <button
+              class="australia-overview-main-grid-first-item-first-button"
+            >
+              View All
+            </button>
+          </div>
+          <div
+            class="australia-overview-main-grid-first-item australia-overview-main-grid-first-item-second"
+          >
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-1"
+            >
+              <p>To Be Applied</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-2"
+            >
+              <p>Offer letter Processing</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-3"
+            >
+              <p>Offer Letter Issued</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-4"
+            >
+              <p>COE Processing</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-5"
+            >
+              <p>COE Issued</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-6"
+            >
+              <p>Closed</p>
+              <h1>30</h1>
+              <h5>+70</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="85"
+                height="35"
+                viewBox="0 0 85 35"
+                fill="none"
+              >
+                <rect y="18" width="5" height="17" rx="2.5" fill="white" />
+                <rect x="8" y="7" width="5" height="28" rx="2.5" fill="white" />
+                <rect
+                  x="16"
+                  y="13"
+                  width="5"
+                  height="22"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="24" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="32"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect x="40" width="5" height="35" rx="2.5" fill="white" />
+                <rect x="48" width="5" height="35" rx="2.5" fill="white" />
+                <rect
+                  x="56"
+                  y="15"
+                  width="5"
+                  height="20"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="64"
+                  y="7"
+                  width="5"
+                  height="28"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="72"
+                  y="20"
+                  width="5"
+                  height="15"
+                  rx="2.5"
+                  fill="white"
+                />
+                <rect
+                  x="80"
+                  y="5"
+                  width="5"
+                  height="30"
+                  rx="2.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="australia-overview-main-grid-second-main">
+          <div class="australia-overview-main-grid-second">
+            <h1 class="australia-overview-main-grid-second-title">
+              Application Overview
+            </h1>
+            <hr class="stackbarchart-line1" />
+            <div class="australia-overview-main-grid-second-item">
+              <div
+                class="australia-overview-main-grid-second-item-first australia-overview-main-grid-second-item-first-shadow"
+              >
+                <p class="australia-overview-main-grid-second-item-first-p">
+                  Average Enquiry
+                </p>
+                <div class="">
+                  <div
+                    class="australia-overview-main-grid-second-item-first-stats"
+                  >
+                    <h1>14.81</h1>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="7"
+                      viewBox="0 0 8 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M4.86603 6.5C4.48113 7.16667 3.51887 7.16667 3.13397 6.5L0.535899 2C0.150999 1.33333 0.632124 0.499999 1.40192 0.499999L6.59808 0.5C7.36788 0.5 7.849 1.33333 7.4641 2L4.86603 6.5Z"
+                        fill="#FF0000"
+                      />
+                    </svg>
+                    <p>-10.78%</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="australia-overview-main-grid-second-item-first australia-overview-main-grid-second-item-first-shadow"
+              >
+                <p class="australia-overview-main-grid-second-item-first-p">
+                  Average Time Frame
+                </p>
+                <div class="">
+                  <div
+                    class="australia-overview-main-grid-second-item-first-stats"
+                  >
+                    <h1>12%</h1>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="7"
+                      viewBox="0 0 8 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.13397 0.500001C3.51887 -0.166666 4.48113 -0.166667 4.86603 0.5L7.4641 5C7.849 5.66667 7.36788 6.5 6.59808 6.5H1.40192C0.632124 6.5 0.150998 5.66667 0.535898 5L3.13397 0.500001Z"
+                        fill="#047857"
+                      />
+                    </svg>
+                    <p>1.08%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="australia-overview-main-grid-second-item-first">
+                <p class="australia-overview-main-grid-second-item-first-p">
+                  Success Rate
+                </p>
+                <div class="">
+                  <div
+                    class="australia-overview-main-grid-second-item-first-stats"
+                  >
+                    <h1>14.81</h1>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="7"
+                      viewBox="0 0 8 7"
+                      fill="none"
+                    >
+                      <path
+                        d="M4.86603 6.5C4.48113 7.16667 3.51887 7.16667 3.13397 6.5L0.535899 2C0.150999 1.33333 0.632124 0.499999 1.40192 0.499999L6.59808 0.5C7.36788 0.5 7.849 1.33333 7.4641 2L4.86603 6.5Z"
+                        fill="#FF0000"
+                      />
+                    </svg>
+                    <p>-10.78%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="australia-overview-main-grid-second-item-first">
+                <select name="" id="">
+                  <option value="">Month</option>
+                  <option value="">Month</option>
+                  <option value="">Month</option>
+                </select>
+                <button>Filter</button>
+              </div>
+            </div>
+          </div>
+          <div id="stackedbarchart1"></div>
+          <div class="australia-overview-main-grid-labels">
+            <div><span class="circle label-1"></span>To Be Applied</div>
+            <div><span class="circle label-2"></span>Offer Letter Issued</div>
+            <div><span class="circle label-3"></span>CEO Issued</div>
+          </div>
+        </div>
+
+        <div class="australia-overview-main-grid-second-main">
+          <div class="australia-overview-main-grid-second">
+            <div class="second-chart-title">
+              <h1 class="australia-overview-main-grid-second-title">
+                Intakes Overview
+              </h1>
+              <div class="australia-overview-main-grid-second-item-first">
+                <select name="" id="">
+                  <option value="">Month</option>
+                  <option value="">Month</option>
+                  <option value="">Month</option>
+                </select>
+                <button>Filter</button>
+              </div>
+            </div>
+            <hr class="stackbarchart-line2" />
+          </div>
+          <div id="stackedbarchart2"></div>
+          <div class="australia-overview-main-grid-labels">
+            <div><span class="circle label-1"></span>Start</div>
+            <div><span class="circle label-3"></span>Finish</div>
+          </div>
+        </div>
+
+        <!-- END -->
+        <div class="australia-bottom-overview">
+          <div class="australia-bottom-overview-1">
+            <div class="australia-bottom-overview-1-title-container">
+              <p class="australia-bottom-overview-1-title">Popular Institute</p>
+              <button class="australia-bottom-overview-1-view-all">
+                Visa All Institute
+              </button>
+            </div>
+            <div class="australia-bottom-overview-1-body">
+              <div class="australia-bottom-overview-1-body-left">
+
+                <div class="uni-detail-left">
+                  <p class="uni-initials">A</p>
+                  <p class="uni-full-name uni-full-name-active">
+                    Australia Institute of Higher Education
+                  </p>
+                </div>
+
+                <div class="uni-detail-left">
+                  <p class="uni-initials">W</p>
+                  <p class="uni-full-name">
+                    Wentworth Institute of Higher Education Pty Ltd
+                  </p>
+                </div>
+
+                <div class="uni-detail-left">
+                  <p class="uni-initials">A</p>
+                  <p class="uni-full-name">
+                    Australian Institute of Business and Management Pty Ltd
+                  </p>
+                </div>
+
+
+              </div>
+              <div class="australia-bottom-overview-1-body-right">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="130"
+                  height="67"
+                  viewBox="0 0 130 67"
+                  fill="none"
+                >
+                  <circle
+                    cx="65"
+                    cy="65"
+                    r="61.5"
+                    transform="matrix(-1 0 0 1 130 0)"
+                    stroke="url(#paint0_linear_32_2552)"
+                    stroke-width="7"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_32_2552"
+                      x1="121.5"
+                      y1="65"
+                      x2="5.99999"
+                      y2="40"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF6692" />
+                      <stop offset="0.335" stop-color="#FF9E6D" />
+                      <stop offset="0.665" stop-color="#FFD648" />
+                      <stop offset="0.995" stop-color="#A6F7F5" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./linechart.js"></script>
+  <script src="./script.js"></script>
+  <script src="./stackedbarchart.js"></script>
+
+  <!-- aon scroll cdn -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
