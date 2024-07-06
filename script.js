@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
         title: {
           display: false,
         },
+        grid:{
+          display: false
+        },
         ticks: {
           callback: function (value, index, ticks) {
             if (index === 0 || index === ticks.length - 1) {
@@ -76,6 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
       y: {
         title: {
           display: false,
+        },
+        grid:{
+          display: false
         },
       },
     },
