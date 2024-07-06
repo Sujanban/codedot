@@ -6,20 +6,18 @@ const myChart = new Chart(ctxx, {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
             {
-                label: 'Dataset 1',
+                label: 'Achieved',
                 data: [65, 59, 80, 81, 56, 55, 40],
-                borderColor: 'rgba(75, 192, 192, 1)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: '#559FE4',
                 fill: false,
-                tension: 0.4 // Makes the line smooth
+                tension: 0.4
             },
             {
-                label: 'Dataset 2',
+                label: 'Remaining',
                 data: [28, 48, 40, 19, 86, 27, 90],
-                borderColor: 'rgba(153, 102, 255, 1)',
-                backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                borderColor: '#BFBFBF',
                 fill: false,
-                tension: 0.4 // Makes the line smooth
+                tension: 0.4
             }
         ]
     },
@@ -30,7 +28,10 @@ const myChart = new Chart(ctxx, {
                 display: false,
                 position: 'top'
             },
-            backgroundColor: '#559FE4'
+            tooltip: {
+                mode: 'index',
+                intersect: false
+            }
         },
         scales: {
             x: {
@@ -39,8 +40,11 @@ const myChart = new Chart(ctxx, {
                     display: false,
                     text: 'Month'
                 },
-                ticks:{
+                ticks: {
                     display: false
+                },
+                grid: {
+                    display: false // Hides the vertical grid lines
                 }
             },
             y: {
@@ -49,11 +53,14 @@ const myChart = new Chart(ctxx, {
                     display: false,
                     text: 'Value'
                 },
-                ticks:{
+                ticks: {
                     display: false
                 },
                 suggestedMin: 0,
-                suggestedMax: 100
+                suggestedMax: 100,
+                grid: {
+                    display: false // Hides the horizontal grid lines
+                }
             }
         }
     }
