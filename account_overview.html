@@ -6,8 +6,7 @@
     <!--    tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -17,7 +16,6 @@
       referrerpolicy="no-referrer"
     />
 
-    
     <!-- chartjs cdn -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -40,32 +38,30 @@
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
 
-
-
-
     <!-- style only for account-overview page -->
-     <style>
+    <style>
       .account-overview-label {
-  border-radius: 5px;
-  /* background: #559fe4; */
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.account-overview-shadow {
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
-}
-select.remove-select-down-arrow{
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-.account-overview-select-input {
-  border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 0.09);
-}
-     </style>
+        border-radius: 5px;
+        /* background: #559fe4; */
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+      .account-overview-shadow {
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+      select.remove-select-down-arrow {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      .account-overview-select-input {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25),
+          0px 0px 17px 0px rgba(0, 0, 0, 0.09);
+      }
+    </style>
   </head>
   <body>
     <section class="p-4 xl:w-[1128px] mx-auto bg-slate-100 rounded-xl">
@@ -141,41 +137,81 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
           class="sm:p-2 md:p-4 grid grid-cols-2 lg:flex justify-between items-center gap-2 md:gap-4"
         >
           <div class="xl:pr-20">
-            <h1 class="px-1 py-2 sm:p-2 text-sm md:text-base font-semibold text-black/50">
+            <h1
+              class="px-1 py-2 sm:p-2 text-sm md:text-base font-semibold text-black/50"
+            >
               Branch
             </h1>
             <div class="relative">
               <select
-              class=" px-1 py-2 sm:p-2 remove-select-down-arrow account-overview-select-input text-black/50 rounded-md outline-none w-full lg:w-60 text-sm dark-shadow"
-              name=""
-              id=""
-            >
-              <option value="">All</option>
-              <option value="">Kathmandu</option>
-              <option value="">Pokhara</option>
-            </select>
-            <svg class="absolute right-2 top-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <g filter="url(#filter0_d_1_362)">
-                <path d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z" fill="#094394" fill-opacity="0.8"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_1_362" x="3.00122" y="8.17993" width="18.0007" height="11.6426" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="2"/>
-                  <feGaussianBlur stdDeviation="1"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_362"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_362" result="shape"/>
-                </filter>
-              </defs>
-            </svg>
+                class="px-1 py-2 sm:p-2 remove-select-down-arrow account-overview-select-input text-black/50 rounded-md outline-none w-full lg:w-60 text-sm dark-shadow"
+                name=""
+                id=""
+              >
+                <option value="">All</option>
+                <option value="">Kathmandu</option>
+                <option value="">Pokhara</option>
+              </select>
+              <svg
+                class="absolute right-2 top-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_362)">
+                  <path
+                    d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z"
+                    fill="#094394"
+                    fill-opacity="0.8"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_362"
+                    x="3.00122"
+                    y="8.17993"
+                    width="18.0007"
+                    height="11.6426"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_362"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_362"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
             </div>
           </div>
 
           <div>
-            <h1 class="px-1 py-2 sm:p-2 text-sm md:text-base font-semibold text-black/50">
+            <h1
+              class="px-1 py-2 sm:p-2 text-sm md:text-base font-semibold text-black/50"
+            >
               Current Period
             </h1>
             <div class="relative">
@@ -184,30 +220,70 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
                 class="px-1 py-2 sm:p-2 account-overview-select-input text-black/50 rounded-md outline-none text-sm w-full lg:w-60 dark-shadow"
                 type="text"
               />
-              <svg class="absolute right-2 top-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <svg
+                class="absolute right-2 top-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
                 <g filter="url(#filter0_d_1_362)">
-                  <path d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z" fill="#094394" fill-opacity="0.8"/>
+                  <path
+                    d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z"
+                    fill="#094394"
+                    fill-opacity="0.8"
+                  />
                 </g>
                 <defs>
-                  <filter id="filter0_d_1_362" x="3.00122" y="8.17993" width="18.0007" height="11.6426" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="2"/>
-                    <feGaussianBlur stdDeviation="1"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_362"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_362" result="shape"/>
+                  <filter
+                    id="filter0_d_1_362"
+                    x="3.00122"
+                    y="8.17993"
+                    width="18.0007"
+                    height="11.6426"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_362"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_362"
+                      result="shape"
+                    />
                   </filter>
                 </defs>
               </svg>
             </div>
           </div>
 
-          <h1 class="hidden lg:block line relative top-[20px] rounded-full rounded-full h-0.5 w-[200px] bg-gray-500"></h1>
+          <h1
+            class="hidden lg:block line relative top-[20px] rounded-full rounded-full h-0.5 w-[200px] bg-gray-500"
+          ></h1>
 
           <div>
-            <h1 class="px-1 py-2 sm:p-2  font-semibold text-sm md:text-base text-black/50">
+            <h1
+              class="px-1 py-2 sm:p-2 font-semibold text-sm md:text-base text-black/50"
+            >
               Previous Period
             </h1>
             <div class="relative">
@@ -216,20 +292,56 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
                 class="px-1 py-2 sm:p-2 account-overview-select-input text-black/50 rounded-md outline-none text-sm w-full lg:w-60 dark-shadow"
                 type="text"
               />
-              <svg class="absolute right-2 top-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <svg
+                class="absolute right-2 top-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
                 <g filter="url(#filter0_d_1_362)">
-                  <path d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z" fill="#094394" fill-opacity="0.8"/>
+                  <path
+                    d="M17.92 8.17993H11.69H6.07999C5.11999 8.17993 4.63999 9.33993 5.31999 10.0199L10.5 15.1999C11.33 16.0299 12.68 16.0299 13.51 15.1999L15.48 13.2299L18.69 10.0199C19.36 9.33993 18.88 8.17993 17.92 8.17993Z"
+                    fill="#094394"
+                    fill-opacity="0.8"
+                  />
                 </g>
                 <defs>
-                  <filter id="filter0_d_1_362" x="3.00122" y="8.17993" width="18.0007" height="11.6426" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset dy="2"/>
-                    <feGaussianBlur stdDeviation="1"/>
-                    <feComposite in2="hardAlpha" operator="out"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_362"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_362" result="shape"/>
+                  <filter
+                    id="filter0_d_1_362"
+                    x="3.00122"
+                    y="8.17993"
+                    width="18.0007"
+                    height="11.6426"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="1" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_362"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_362"
+                      result="shape"
+                    />
                   </filter>
                 </defs>
               </svg>
@@ -250,51 +362,9 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
         <!-- dashboard chart upper -->
         <div class="p-2 md:p-4 grid md:grid-cols-2 gap-4 bg-[#FDFDFC]">
           <!-- individual chart item -->
-          <div class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl">
-            <div class="space-y-4">
-              <div>
-                <h1 class="font-medium">Sub Agent Invoice</h1>
-                <p class="text-[#30A753] text-[10px]">
-                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
-                </p>
-              </div>
-              <div>
-                <p class="text-xs text-black/50">Total</p>
-                <h1>$ 600.00</h1>
-              </div>
-
-              <div class="grid grid-cols-2">
-                <div class="flex items-start">
-                  <img
-                    class="pt-2 pr-1 w-4"
-                    src="./assets/arrow-up.svg"
-                    alt=""
-                  />
-                  <div class="">
-                    <span class="text-xs">$ 100.00</span>
-                    <p class="text-[10px] text-black/50">Paid</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <img
-                    class="pt-2 pr-1 w-4"
-                    src="./assets/arrow-down.svg"
-                    alt=""
-                  />
-                  <div>
-                    <span class="text-xs">$ -94.50</span>
-                    <p class="text-[10px] text-black/50">pending</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-2 shadow rounded-md">
-              <canvas id="chart1" class="w-[200px] md:w-full lineChart"></canvas>
-            </div>
-          </div>
-
-          <!-- individual chart item -->
-          <div class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl">
+          <div
+            class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl"
+          >
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Sub Agent Invoice</h1>
@@ -334,13 +404,16 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
             </div>
             <div class="col-span-2 shadow rounded-md">
               <canvas
-                id="chart2" class="w-[200px] md:w-full lineChart"
+                id="chart1"
+                class="w-[200px] md:w-full lineChart"
               ></canvas>
             </div>
           </div>
 
           <!-- individual chart item -->
-          <div class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl">
+          <div
+            class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl"
+          >
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Sub Agent Invoice</h1>
@@ -380,7 +453,57 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
             </div>
             <div class="col-span-2 shadow rounded-md">
               <canvas
-                id="chart3" class="w-[200px] md:w-full lineChart"
+                id="chart2"
+                class="w-[200px] md:w-full lineChart"
+              ></canvas>
+            </div>
+          </div>
+
+          <!-- individual chart item -->
+          <div
+            class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl"
+          >
+            <div class="space-y-4">
+              <div>
+                <h1 class="font-medium">Sub Agent Invoice</h1>
+                <p class="text-[#30A753] text-[10px]">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i> 2.1%
+                </p>
+              </div>
+              <div>
+                <p class="text-xs text-black/50">Total</p>
+                <h1>$ 600.00</h1>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-up.svg"
+                    alt=""
+                  />
+                  <div class="">
+                    <span class="text-xs">$ 100.00</span>
+                    <p class="text-[10px] text-black/50">Paid</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <img
+                    class="pt-2 pr-1 w-4"
+                    src="./assets/arrow-down.svg"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-xs">$ -94.50</span>
+                    <p class="text-[10px] text-black/50">pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 shadow rounded-md">
+              <canvas
+                id="chart3"
+                class="w-[200px] md:w-full lineChart"
               ></canvas>
             </div>
           </div>
@@ -389,7 +512,9 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
         <!-- dashboard chart lower -->
         <div class="p-2 md:p-4 grid md:grid-cols-2 gap-4">
           <!-- individual chart item -->
-          <div class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl">
+          <div
+            class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl"
+          >
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Paid Invoice</h1>
@@ -436,7 +561,9 @@ box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 17px 0px rgba(0, 0, 0, 
           </div>
 
           <!-- individual chart item -->
-          <div class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl">
+          <div
+            class="p-3 md:grid grid-cols-3 account-overview-shadow rounded-xl"
+          >
             <div class="space-y-4">
               <div>
                 <h1 class="font-medium">Paid Invoice</h1>

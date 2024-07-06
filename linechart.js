@@ -27,7 +27,7 @@ const myChart = new Chart(ctxx, {
         responsive: true,
         plugins: {
             legend: {
-                display: true,
+                display: false,
                 position: 'top'
             },
             backgroundColor: '#559FE4'
@@ -36,15 +36,21 @@ const myChart = new Chart(ctxx, {
             x: {
                 display: true,
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Month'
+                },
+                ticks:{
+                    display: false
                 }
             },
             y: {
                 display: true,
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Value'
+                },
+                ticks:{
+                    display: false
                 },
                 suggestedMin: 0,
                 suggestedMax: 100
