@@ -9,15 +9,15 @@
   /* font-family: "Poppins", sans-serif; */
   font-family: "Inter", sans-serif;
 }
-.dashboard-right .task-manager-cards::-webkit-scrollbar-thumb, .dashboard-right .visa-section-body::-webkit-scrollbar-thumb, .filter::-webkit-scrollbar-thumb {
+.dashboard-right .task-manager-cards::-webkit-scrollbar-thumb, .dashboard-right .visa-section-body::-webkit-scrollbar-thumb, .filter::-webkit-scrollbar-thumb , .service-manager-bottom .service-manager-body-right::-webkit-scrollbar-thumb {
   border-radius: 9px;
 background: rgba(0, 0, 0, 0.40);
 }
-.dashboard-right .task-manager-cards::-webkit-scrollbar, .dashboard-right .visa-section-body::-webkit-scrollbar, .filter::-webkit-scrollbar {
+.dashboard-right .task-manager-cards::-webkit-scrollbar, .dashboard-right .visa-section-body::-webkit-scrollbar, .filter::-webkit-scrollbar , .service-manager-bottom .service-manager-body-right::-webkit-scrollbar  {
   width: 4px;
   height: 4px;
 }
-.dashboard-right .task-manager-cards::-webkit-scrollbar-thumb:hover, .dashboard-right .visa-section-body::-webkit-scrollbar-thumb:hover, .filter::-webkit-scrollbar-thumb:hover {
+.dashboard-right .task-manager-cards::-webkit-scrollbar-thumb:hover, .dashboard-right .visa-section-body::-webkit-scrollbar-thumb:hover, .filter::-webkit-scrollbar-thumb:hover , .service-manager-bottom .service-manager-body-right::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -1148,6 +1148,7 @@ a {
 }
 
 .service-manager-bottom .service-manager-body-right {
+  height: 160px;
   overflow-x: auto;
   border-radius: 12px;
   background: rgba(217, 217, 217, 0.15);
@@ -1241,7 +1242,6 @@ a {
   display: flex;
   align-items: center;
   gap: 4px;
-  flex-wrap: wrap;
 }
 .dashboard-right .task-manager-header h1 {
   color: rgba(20, 20, 20, 0.8);
