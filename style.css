@@ -97,10 +97,6 @@ table {
   width: 100%;
 }
 
-tr:nth-child(even) {
-  /* background-color: #f2f2f2; */
-}
-
 select {
   padding: 2px;
   border: none;
@@ -900,9 +896,6 @@ a {
   font-weight: 700;
 }
 
-.service-manager-body-right-grid-item svg {
-}
-
 .service-manager-body-right-grid-item {
   display: flex;
   align-items: center;
@@ -964,13 +957,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.client-invoice-body-left div {
-  /* padding: 4px 0px; */
-  /* display: grid; */
-}
-.client-invoice-body-left-itemm {
 }
 
 .client-invoice-body-left button {
@@ -1448,8 +1434,6 @@ a {
   overflow: auto;
   padding: 0px 0px 16px 0px;
 }
-.visa-section-body-container {
-}
 .dashboard-right .visa-section-body table {
   width: 100%;
 }
@@ -1824,8 +1808,7 @@ a {
   }
 
   /* stats-container */
-  .stats-container {
-  }
+
   .stats-container .stats-container-item {
     padding: 12px;
     gap: 8px;
@@ -1865,10 +1848,6 @@ a {
   }
   .service-manager-body-lefttttt button {
     padding: 4px 0px;
-  }
-
-  .service-manager-bottom {
-    /* display: none; */
   }
 
   /* targeted dashboard */
@@ -2253,8 +2232,8 @@ a {
     rgba(93, 160, 252, 0.68) 98.75%
   );
 }
-.australia-overview-main-grid-first-item-second-item img{
-width: 100%;
+.australia-overview-main-grid-first-item-second-item img {
+  width: 100%;
 }
 .australia-overview-main-grid-first-item-second-item p {
   padding: 0px 8px;
@@ -2343,13 +2322,6 @@ width: 100%;
   border-radius: 10px;
   background: var(--Shades-White, #fff);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
-}
-.australia-overview-main-grid-second {
-  /* display: flex;
-  padding: 32px 64px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px; */
 }
 .australia-overview-main-grid-second-title {
   color: rgba(21, 39, 86, 0.8);
@@ -2579,14 +2551,14 @@ width: 100%;
 }
 
 @media (max-width: 1024px) {
-  .australia-overview-main-grid-first-item-second{
+  .australia-overview-main-grid-first-item-second {
     gap: 8px;
   }
   .australia-overview-main-grid-first-item-second-item h1 {
     padding: 4px 12px;
     font-size: 18px;
-}
-/* .australia-overview-main-grid-first-item-second-item svg{
+  }
+  /* .australia-overview-main-grid-first-item-second-item svg{
   width: auto;
 } */
   .australia-overview-main-grid-second-item {
@@ -2608,7 +2580,7 @@ width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .australia-overview-main-title{
+  .australia-overview-main-title {
     font-size: 16px;
     padding: 6px;
     margin: 0px 8px;
@@ -2638,7 +2610,7 @@ width: 100%;
   .australia-overview-main-grid-second-item {
     padding: 0px;
     gap: 16px;
-    
+
     flex-wrap: wrap;
   }
   .australia-overview-main-grid-second-item-first-p {
@@ -2656,44 +2628,38 @@ width: 100%;
   }
 }
 @media (max-width: 650px) {
-  
-  .uni-detail-left .uni-full-name{
+  .uni-detail-left .uni-full-name {
     font-size: 12px !important;
   }
-  .australia-overview-main-grid-first-item{
+  .australia-overview-main-grid-first-item {
     display: grid;
     padding: 14px 0px;
   }
-  .australia-overview-main-grid-first-item-p{
-    padding:  8px 14px;
+  .australia-overview-main-grid-first-item-p {
+    padding: 8px 14px;
   }
-  .australia-overview-main-grid-first-item-first-button{
+  .australia-overview-main-grid-first-item-first-button {
     margin-right: 8px;
   }
   .australia-overview-main-grid {
     padding: 16px 8px;
   }
-  .australia-overview-main{
+  .australia-overview-main {
     padding: 18px 0px;
   }
-  .australia-overview-main-grid-second-item-first{
-    /* display: grid;
-    grid-template-columns: 1fr; */
-
-  }
-  .australia-overview-main-grid-first-item-second{
+  .australia-overview-main-grid-first-item-second {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     box-shadow: none;
   }
-  .australia-bottom-overview-1-body{
+  .australia-bottom-overview-1-body {
     display: grid;
   }
-  .australia-overview-main-grid-second-title{
+  .australia-overview-main-grid-second-title {
     font-size: 16px;
   }
-  .australia-bottom-overview-1-body-right{
+  .australia-bottom-overview-1-body-right {
     margin: auto;
   }
 }
