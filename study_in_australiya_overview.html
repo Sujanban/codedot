@@ -92,19 +92,19 @@
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-1"
             >
               <!-- <div> -->
-                <p>To Be Applied</p>
+              <p>To Be Applied</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
             </div>
             <div
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-2"
             >
               <!-- <div> -->
-                <p>Offer letter Processing</p>
+              <p>Offer letter Processing</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
 
               <!-- </div> -->
             </div>
@@ -112,10 +112,10 @@
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-3"
             >
               <!-- <div> -->
-                <p>Offer Letter Issued</p>
+              <p>Offer Letter Issued</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
 
               <!-- </div> -->
             </div>
@@ -123,10 +123,10 @@
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-4"
             >
               <!-- <div> -->
-                <p>COE Processing</p>
+              <p>COE Processing</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
 
               <!-- </div> -->
             </div>
@@ -134,10 +134,10 @@
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-5"
             >
               <!-- <div> -->
-                <p>COE Issued</p>
+              <p>COE Issued</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
 
               <!-- </div> -->
             </div>
@@ -145,10 +145,10 @@
               class="australia-overview-main-grid-first-item-second-item australia-overview-main-grid-first-item-second-item-6"
             >
               <!-- <div> -->
-                <p>Closed</p>
+              <p>Closed</p>
               <h1>30</h1>
               <h5>+70</h5>
-              <img src="./assets/lines.svg" alt="">
+              <img src="./assets/lines.svg" alt="" />
 
               <!-- </div> -->
             </div>
@@ -185,7 +185,7 @@
                         fill="#FF0000"
                       />
                     </svg>
-                    <p>-10.78%</p>
+                    <p class="negative">-10.78%</p>
                   </div>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                         fill="#047857"
                       />
                     </svg>
-                    <p>1.08%</p>
+                    <p class="positive">1.08%</p>
                   </div>
                 </div>
               </div>
@@ -237,11 +237,13 @@
                         fill="#FF0000"
                       />
                     </svg>
-                    <p>-10.78%</p>
+                    <p class="negative"->10.78%</p>
                   </div>
                 </div>
               </div>
-              <div class="australia-overview-main-grid-second-item-first australia-overview-main-grid-second-item-first-buttons">
+              <div
+                class="australia-overview-main-grid-second-item-first australia-overview-main-grid-second-item-first-buttons"
+              >
                 <select name="" id="">
                   <option value="">Month</option>
                   <option value="">Month</option>
@@ -316,7 +318,7 @@
                 </div>
               </div>
               <div class="australia-bottom-overview-1-body-right">
-                <svg
+                <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="130"
                   height="67"
@@ -346,22 +348,32 @@
                       <stop offset="0.995" stop-color="#A6F7F5" />
                     </linearGradient>
                   </defs>
-                </svg>
-
+                </svg> -->
+                <div id="gause-chart"></div>
                 <!-- score -->
                 <div class="australia-bottom-overview-1-body-right-scores">
-                  <p class="australia-bottom-overview-1-body-right-scores-top">90</p>
-                  <p class="australia-bottom-overview-1-body-right-scores-bottom">180</p>
+                  <!-- <p class="australia-bottom-overview-1-body-right-scores-top">
+                    80/160
+                  </p> -->
+                  <p
+                    class="australia-bottom-overview-1-body-right-scores-uni-initials"
+                  >
+                    A
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <p></p>
         </div>
+
+        <!-- demo -->
+        <!-- <div id='gause-chart'></div> -->
       </div>
     </div>
   </body>
   <script src="./linechart.js"></script>
+  <script src="./gausechart.js"></script>
   <script src="./script.js"></script>
   <script src="./stackedbarchart.js"></script>
 
